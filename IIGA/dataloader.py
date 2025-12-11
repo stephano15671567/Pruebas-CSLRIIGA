@@ -59,7 +59,7 @@ def collate_fn(data, fixed_padding=None, pad_index=1232):
 
         #For sequence of words
         elif(t=='target'):
-            padded_seqs = np.full((len(sequences), max(lengths)), fill_value=pad_index, dtype=np.int)
+            padded_seqs = np.full((len(sequences), max(lengths)), fill_value=pad_index, dtype=int)
 
         for i, seq in enumerate(sequences):
             end = lengths[i]
