@@ -1,0 +1,14 @@
+# Ignorar carpetas de datos generados
+segmentation/train_segmentation/
+segmentation/dev_segmentation/
+segmentation/test_segmentation/
+
+# Ignorar datasets si estan aqui dentro
+*.zip
+*.tar
+*.gz
+
+# Ignorar archivos de sistema
+__pycache__/
+*.pyc
+.vscode/
